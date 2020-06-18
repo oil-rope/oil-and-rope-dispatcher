@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "oil-and-rope-dispatcher"
+version = "0.0.1"
+description = "Dispatcher to deploy Oil & Rope Project."
+authors = ["LeCuay <suso.becerra98@gmail.com>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+Flask = "^1.1.2"
+
+[tool.poetry.dev-dependencies]
+autopep8 = "^1.5.3"
+flake8 = "^3.8.3"
+pytest = "^5.4.3"
+pytest-cov = "^2.10.0"
+pytest-env = "^0.6.2"
+isort = "^4.3.21"
+ipdb = "^0.13.2"
+ipython = "^7.15.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
