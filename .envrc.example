@@ -1,0 +1,12 @@
+# Flask
+export DEBUG=True
+export FLASK_APP=oilandrope_dispatcher
+export FLASK_WSGI_MODULE=oilandrope_dispatcher.wsgi
+
+# Gunicorn
+export GUNICORN_ACCESS_LOG=/var/log/oilandrope_dispatcher.access.log
+export GUNICORN_ERROR_LOG=/var/log/oilandrope_dispatcher.error.log
+export GUNICORN_BIND_IP=0.0.0.0
+export GUNICORN_BIND_PORT=80
+export GUNICORN_CONFIG_FILE=oilandrope_dispatcher/gunicorn_config.py
+export GUNICORN_SOCK=/tmp/oilandrope_dispatcher.sock
